@@ -6,5 +6,6 @@ THEANO_FLAGS="device=cpu,floatX=float32" ~/zhangzhenhu/env/bin/python train_nea.
 	-ts data/AIlab/test.tsv \
 	-p 1 \
 	--emb /home/work/zhangzhenhu/Semantic-Texual-Similarity-Toolkits/data/GoogleNews-vectors-negative300.txt \
+	--embdim 300 \
 	--epochs 20 \
 	-o output
