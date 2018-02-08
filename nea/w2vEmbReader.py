@@ -28,9 +28,9 @@ class W2VEmbReader:
                 self.embeddings = {}
                 counter = 0
                 for line in emb_file:
-                    tokens = line.strip().split()
+                    tokens = line.split()
                     word = tokens[0]
-                    vec = tokens[1:]
+                    vec = tokens[1].split(',')
                     assert len(vec) == self.emb_dim, 'The number of dimensions does not match the header info'
                     self.embeddings[word] = vec
                     counter += 1
