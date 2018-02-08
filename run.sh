@@ -8,4 +8,6 @@ THEANO_FLAGS="device=cpu,floatX=float32" ~/zhangzhenhu/env/bin/python train_nea.
 	--emb data/release/En_vectors.txt \
 	--embdim 50 \
 	--epochs 20 \
+	--cnndim 300 \
+	--dropout 0 \
 	-o output
